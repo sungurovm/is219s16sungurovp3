@@ -97,6 +97,51 @@ app.controller('HomeController', ['$scope', function($scope) {
 
 	
 	/* ADD VARIABLES FOR STEP 3 HERE */
+	$scope.movies = [
+    { 
+      title:	'casino', 
+      iscore:	8.2,
+      rating:	'R',
+      runtime:	178,
+      released:	new Date('1995', '11', '22'),
+      country:	'USA',
+      posters:	[''],
+      imdb:		'http://www.imdb.com/title/tt0112641/?ref_=fn_al_tt_1',
+      website:	'https://www.facebook.com/CasinoMovie/',
+      likes:	,
+      dislikes:	,
+      posterindex: 0
+	},
+	{
+		title:	'reservoir dogs', 
+      iscore:	8.2,
+      rating:	'R',
+      runtime: 99,
+	  released: new Date('1992','9','2'),
+	  country: 'USA',
+	  posters: [''],
+	  imdb: 'http://www.imdb.com/title/tt0105236/?ref_=nv_sr_1',
+	  website: 'https://www.facebook.com/ReservoirDogsMovie',
+	  likes: ,
+	  dislikes: ,
+	posterindex: 0
+	},
+	{
+	  title: 'terminator'	
+	  iscore: 8.1,
+	  rating: 'R',
+	  runtime: 107,
+	  released: new Date('1984','10','26'),
+	  country: 'USA',
+	  posters:[''],
+	  imdb: 'http://www.imdb.com/title/tt0088247/?ref_=nv_sr_3',
+	  website: 'https://www.facebook.com/The-Terminator-181221288646788/',
+	  likes: ,
+	  dislikes: ,
+	  posterindex: 0
+	 
+		
+	};
 	
 	
 	
