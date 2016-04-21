@@ -88,16 +88,7 @@ app.controller('HomeController', ['$scope', function($scope) {
       likes:	812,
       dislikes:	101,
       posterindex: 0
-	}
-	
-	
-  ];
-	
-	
-
-	
-	/* ADD VARIABLES FOR STEP 3 HERE */
-	$scope.movies = [
+	},
     { 
       title:	'casino', 
       iscore:	8.2,
@@ -108,8 +99,8 @@ app.controller('HomeController', ['$scope', function($scope) {
       posters:	[''],
       imdb:		'http://www.imdb.com/title/tt0112641/?ref_=fn_al_tt_1',
       website:	'https://www.facebook.com/CasinoMovie/',
-      likes:	,
-      dislikes:	,
+      likes:	0,
+      dislikes:	0,
       posterindex: 0
 	},
 	{
@@ -122,12 +113,12 @@ app.controller('HomeController', ['$scope', function($scope) {
 	  posters: [''],
 	  imdb: 'http://www.imdb.com/title/tt0105236/?ref_=nv_sr_1',
 	  website: 'https://www.facebook.com/ReservoirDogsMovie',
-	  likes: ,
-	  dislikes: ,
+	  likes: 0,
+	  dislikes: 0,
 	posterindex: 0
 	},
 	{
-	  title: 'terminator'	
+	  title: 'terminator',	
 	  iscore: 8.1,
 	  rating: 'R',
 	  runtime: 107,
@@ -136,12 +127,23 @@ app.controller('HomeController', ['$scope', function($scope) {
 	  posters:[''],
 	  imdb: 'http://www.imdb.com/title/tt0088247/?ref_=nv_sr_3',
 	  website: 'https://www.facebook.com/The-Terminator-181221288646788/',
-	  likes: ,
-	  dislikes: ,
+	  likes: 0,
+	  dislikes: 0,
 	  posterindex: 0
 	 
 		
-	};
+	}
+	];
+	
+	
+
+	
+	/* ADD VARIABLES FOR STEP 3 HERE */
+	$scope.title="IMDB + Michael's Top 8 Movies";
+	$scope.owner="Michael";
+	$scope.github="https://github.com/sungurovm/is219s16sungurovp3";
+	
+
 	
 	
 	

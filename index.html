@@ -16,16 +16,16 @@
 	<!-- DO NOT CHANGE ANYTHING ABOVE THIS LINE-->
 
 	<!-- Angular (ADD HERE) -->
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
 
 </head>
 
-  <body>
-	  
-    <div class="header">
+  <body ng-app="IS219Gallery"> 
+	   
+    <div class="header" ng-controller="HomeController">
 	    
       <div class="container">
-        <h1 id="app_title">title</h1>
+        <h1 id="app_title">{{title}}</h1>
       </div>
       
     </div>
@@ -59,7 +59,8 @@
     <div class="footer">
       <div class="container">
 		<a id="github" class="btn btn-lg btn-warning">
-			<i class="fa fa-lg fa-github pull-left" aria-hidden="true"></i> owner github
+		<a href="https://github.com/sungurovm/is219s16sungurovp3/commits/master">
+			<i class="fa fa-lg fa-github pull-left" aria-hidden="true"></i> Michael's github
   		</a>
       </div>
     </div>
@@ -71,7 +72,9 @@
 	 
 	<!-- Controllers -->
 	<script type="text/javascript" src="js/controllers/HomeController.js"></script>
-	 app.controller('Home controller',['scope',function($scope)]) {}
+	
+	
+	 
 	<!-- Services -->
   
 </body>
