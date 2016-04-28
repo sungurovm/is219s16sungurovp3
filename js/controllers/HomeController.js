@@ -96,7 +96,7 @@ app.controller('HomeController', ['$scope', function($scope) {
       runtime:	178,
       released:	new Date('1995', '11', '22'),
       country:	'USA',
-      posters:	[''],
+      posters:	['https://upload.wikimedia.org/wikipedia/en/d/d8/Casino_poster.jpg'],
       imdb:		'http://www.imdb.com/title/tt0112641/?ref_=fn_al_tt_1',
       website:	'https://www.facebook.com/CasinoMovie/',
       likes:	0,
@@ -110,7 +110,7 @@ app.controller('HomeController', ['$scope', function($scope) {
       runtime: 99,
 	  released: new Date('1992','9','2'),
 	  country: 'USA',
-	  posters: [''],
+	  posters: ['http://ia.media-imdb.com/images/M/MV5BMTQxMTAwMDQ3Nl5BMl5BanBnXkFtZTcwODMwNTgzMQ@@._V1_SX640_SY720_.jpg'],
 	  imdb: 'http://www.imdb.com/title/tt0105236/?ref_=nv_sr_1',
 	  website: 'https://www.facebook.com/ReservoirDogsMovie',
 	  likes: 0,
@@ -124,7 +124,7 @@ app.controller('HomeController', ['$scope', function($scope) {
 	  runtime: 107,
 	  released: new Date('1984','10','26'),
 	  country: 'USA',
-	  posters:[''],
+	  posters:['https://upload.wikimedia.org/wikipedia/en/7/70/Terminator1984movieposter.jpg'],
 	  imdb: 'http://www.imdb.com/title/tt0088247/?ref_=nv_sr_3',
 	  website: 'https://www.facebook.com/The-Terminator-181221288646788/',
 	  likes: 0,
@@ -142,6 +142,14 @@ app.controller('HomeController', ['$scope', function($scope) {
 	$scope.title="IMDB + Michael's Top 8 Movies";
 	$scope.owner="Michael";
 	$scope.github="https://github.com/sungurovm/is219s16sungurovp3";
+	
+$scope.movies=[{title},{iscore},{rating},{runtime},{runtime},{released},{country},{posters},{imdb},{website},{likes},{dislikes},{posterindex}]
+
+angular.forEach($scope.movies,function(value,index){
+	alert(value.name);
+})
+
+
 	
 
 	

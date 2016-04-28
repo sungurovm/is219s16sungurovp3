@@ -91,7 +91,7 @@ body {
 }
 
 /* This shapes your like and dislike buttons */
-.likes{
+.likes:hover {
 	background-color: #008700;
 	color: #ffffff;
 	 cursor: pointer;
@@ -107,7 +107,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: background 500ms;
 }
-.dislikes {
+.dislikes:hover{
 	background-color: #f65a5b;
 	color: #ffffff);
     cursor: pointer;
