@@ -154,7 +154,36 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
 		
+	function like(index){
+		like += 1;
+	}
 	
+	function dislike(index){
+		dislike += 1;
+	}
+	
+	function posterClick(index){
+		posterindex += 1;
+		//show poster after posterindex updated
+		//...
+		if (posterindex = posterArray.length - 1) posterindex = 0;
+	}
+	
+	timeText(minutes){
+		if (mintues/60) {
+			//toString might not be needed, modify accordingly
+			var hours = minutes / 60;
+			var h = hours.toString();
+			var m = (minutes % 60).toString();
+			
+			//print h and m;
+		}
+		else {
+		
+			var m = (minutes % 60).toString();
+			//print m;
+		}
+	}
 	
 	
 	
