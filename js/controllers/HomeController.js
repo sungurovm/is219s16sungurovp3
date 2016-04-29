@@ -124,7 +124,7 @@ app.controller('HomeController', ['$scope', function($scope) {
 	  runtime: 107,
 	  released: new Date('1984','10','26'),
 	  country: 'USA',
-	  posters:['img/MV5BODE1MDczNTUxOV5BMl5BanBnXkFtZTcwMTA0NDQyNA@@._V1_UY1200_CR85,0,630,1200_AL_.jpg','img/794443-terminator_1.png'],
+	  posters:['img/top-25-movie-franchises-of-all-time-17-20061204052521974.jpg','img/794443-terminator_1.png'],
 	  imdb: 'http://www.imdb.com/title/tt0088247/?ref_=nv_sr_3',
 	  website: 'https://www.facebook.com/The-Terminator-181221288646788/',
 	  likes: 0,
