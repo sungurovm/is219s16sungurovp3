@@ -92,7 +92,7 @@ body {
 }
 
 /* This shapes your like and dislike buttons */
-.likes:hover {
+.likes{
 	background-color: #008700;
 	color: #ffffff;
 	 cursor: pointer;
@@ -108,9 +108,42 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: background 500ms;
 }
-.dislikes:hover{
+.likes:hover{
+	background-color: #9edd87;
+	color: #008700;
+	 cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 40px;
+    min-width: 70px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 -30px 0 40px;
+    text-align: center;
+    font-weight: 200;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 500ms;
+}
+.dislikes{
 	background-color: #f65a5b;
 	color: #ffffff);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 40px;
+    min-width: 70px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 -30px 0 40px;
+    text-align: center;
+    font-weight: 200;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 500ms;
+}
+
+.dislikes:hover{
+	background-color: #fdd6d6;
+	color: #F65A5B;
     cursor: pointer;
     display: inline-block;
     font-size: 15px;
