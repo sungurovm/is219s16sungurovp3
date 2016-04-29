@@ -170,7 +170,7 @@ app.controller('HomeController', ['$scope', function($scope) {
 		$scope.movies[index].posterclick += 1;
 		//show poster after posterindex updated
 		//...
-		if (posterindex = posterArray.length - 1) posterindex = 0;
+		if (posterindex = posterArray.length - 1) { posterindex = 0; }
 	};
 	
 	/*$scope.timeText(minutes) = function (index){
