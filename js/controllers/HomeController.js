@@ -143,11 +143,11 @@ app.controller('HomeController', ['$scope', function($scope) {
 	$scope.owner="Michael";
 	$scope.github="https://github.com/sungurovm/is219s16sungurovp3";
 	
-$scope.movies=[{title},{iscore},{rating},{runtime},{runtime},{released},{country},{posters},{imdb},{website},{likes},{dislikes},{posterindex}]
+//$scope.movies=[{title},{iscore},{rating},{runtime},{runtime},{released},{country},{posters},{imdb},{website},{likes},{dislikes},{posterindex}]
 
-angular.forEach($scope.movies,function(value,index){
-	alert(value.name);
-})
+//angular.forEach($scope.movies,function(value,index){
+	//alert(value.name);
+
 
 
 	
@@ -162,22 +162,22 @@ angular.forEach($scope.movies,function(value,index){
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
 		
-	function like(index){
-		like += 1;
+	/*$scope.myfunction = function like(index){
+		$scope.display like + 1;
 	}
 	
-	function dislike(index){
-		dislike += 1;
+	$scope.myfunction = function dislike(index){
+		$scope.display dislike += 1;
 	}
 	
-	function posterClick(index){
-		posterindex += 1;
+	$scope.myfunction = function posterClick(index){
+		$scope.display posterindex += 1;
 		//show poster after posterindex updated
 		//...
 		if (posterindex = posterArray.length - 1) posterindex = 0;
-	}
+	};
 	
-	timeText(minutes){
+	function timeText(minutes){
 		if (mintues/60) {
 			//toString might not be needed, modify accordingly
 			var hours = minutes / 60;
@@ -191,7 +191,7 @@ angular.forEach($scope.movies,function(value,index){
 			var m = (minutes % 60).toString();
 			//print m;
 		}
-	}
+	}*/
 	
 	
 	
