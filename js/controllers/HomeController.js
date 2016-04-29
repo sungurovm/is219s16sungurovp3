@@ -167,15 +167,18 @@ app.controller('HomeController', ['$scope', function($scope) {
 	}
 	
 	$scope.posterclick = function (index){
-		$scope.movies[index].posterindex++;
 		//show poster after posterindex updated
 		//...
-		if (posterindex = posterArray.length - 1 ) { posterindex = 0; }
+		if ($scope.movies[index].posterindex > $scope.movies[index].posters.length - 1) {
+		$scope.movies[index].posterindex = 0; }
+		else {
+			$scope.movies[index].posterindex++;
+			}
 	};
 	
 	$scope.timetext = function (minutes){
 			//toString might not be needed, modify accordingly
-			var hours = minutes / 60;
+			var hours = Math.floor(minutes / 60);
 			var h = hours.toString();
 			var m = (minutes % 60).toString();
 			return h + "h" + m + "m" ;
