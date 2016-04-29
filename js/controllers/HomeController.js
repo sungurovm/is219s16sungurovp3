@@ -143,10 +143,6 @@ app.controller('HomeController', ['$scope', function($scope) {
 	$scope.owner="Michael";
 	$scope.github="https://github.com/sungurovm/is219s16sungurovp3";
 	
-//$scope.movies=[{title},{iscore},{rating},{runtime},{runtime},{released},{country},{posters},{imdb},{website},{likes},{dislikes},{posterindex}]
-
-//angular.forEach($scope.movies,function(value,index){
-	//alert(value.name);
 
 
 
@@ -162,23 +158,23 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
 		
-	/*$scope.myfunction = function like(index){
-		$scope.display like + 1;
+	$scope.like = function (index){
+		$scope.movies[index].likes++;
 	}
 	
-	$scope.myfunction = function dislike(index){
-		$scope.display dislike += 1;
+	$scope.dislike = function (index){
+		$scope.movies[index].dislikes += 1;
 	}
 	
-	$scope.myfunction = function posterClick(index){
-		$scope.display posterindex += 1;
+	$scope.posterclick = function (index){
+		$scope.movies[index].posterclick += 1;
 		//show poster after posterindex updated
 		//...
 		if (posterindex = posterArray.length - 1) posterindex = 0;
 	};
 	
-	function timeText(minutes){
-		if (mintues/60) {
+	/*$scope.timeText(minutes) = function (index){
+		$scope.movies[index].timeText(minutes) +=1;
 			//toString might not be needed, modify accordingly
 			var hours = minutes / 60;
 			var h = hours.toString();
